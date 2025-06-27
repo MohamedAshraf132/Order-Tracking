@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("com.google.gms.google-services") // Firebase
+    id("com.huawei.agconnect")
     id("kotlin-android")
     id("dev.flutter.flutter-gradle-plugin") // Flutter plugin
 }
