@@ -8,7 +8,7 @@ class FCMService {
     await _firebaseMessaging.requestPermission();
 
     String? token = await _firebaseMessaging.getToken();
-    print('📱 FCM Token: $token');
+    print('FCM Token: $token');
 
     FirebaseMessaging.onMessage.listen((message) {
       final notification = message.notification;
@@ -21,7 +21,7 @@ class FCMService {
     });
 
     FirebaseMessaging.onMessageOpenedApp.listen((message) {
-      print('🔔 Notification clicked: ${message.data}');
+      print('Notification clicked: ${message.data}');
     });
   }
 }
